@@ -1,0 +1,59 @@
+#managerForm {
+  background-color: #FFF;
+  width: 70%;
+  padding: 20px;
+  border-collapse: collapse;
+}
+
+#managerForm tr {
+  border-top: 1px solid #DDD;
+}
+
+#managerForm tr:first-child {
+  border-top: 0;
+}
+
+#managerForm th {
+  padding: 20px;
+  text-align: left;
+  width: 20%;
+}
+
+#managerForm td {
+  padding: 20px;
+  text-align: left;
+  width: 80%;
+}
+
+@media (max-width: 767px){
+  #managerForm {
+    background-color: #FFF;
+    width: 100%;
+    padding: 20px;
+    border-collapse: collapse;
+  }
+
+  #managerForm th {
+    padding: 10px;
+    text-align: left;
+    width: 60%;
+  }
+
+  #managerForm td {
+    padding: 10px;
+    text-align: left;
+    width: 40%;
+  }
+}
+
+#managerlist {
+  table-layout: fixed;
+}
+
+#managerlist th {
+  text-align: center;
+}
+
+#managerlist td {
+  text-align: center;
+}

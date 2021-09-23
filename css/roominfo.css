@@ -1,0 +1,54 @@
+#roomForm {
+  background-color: #FFF;
+  width: 80%;
+  padding: 20px;
+  border-collapse: collapse;
+}
+
+#roomForm tr {
+  border-top: 1px solid #DDD;
+}
+
+#roomForm tr:first-child {
+  border-top: 0;
+}
+
+#roomForm th {
+  padding: 20px;
+  text-align: left;
+  width: 20%;
+}
+
+#roomForm td {
+  padding: 20px;
+  text-align: left;
+  width: 80%;
+}
+
+#roomlist {
+  table-layout: fixed;
+}
+
+#roomlist th {
+  text-align: center;
+}
+
+#roomlist td {
+  text-align: center;
+}
+
+@media (max-width: 767px){
+  #roomForm th {
+      padding: 6px;
+      text-align: left;
+      width: 60%;
+  }
+
+  #roomForm {
+    background-color: #FFF;
+    width: 100%;
+    padding: 20px;
+    border-collapse: collapse;
+}
+
+}

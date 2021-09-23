@@ -1,0 +1,397 @@
+
+/*체크박스*/
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding-left: 20px;
+}
+
+body {
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #FFEFBA;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+    /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to right, #FFFFFF, #FFEFBA);*/
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+    max-width: 640px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+ul.ks-cboxtags {
+    list-style: none;
+    padding: 0px;
+}
+ul.ks-cboxtags li{
+  display: inline;
+}
+ul.ks-cboxtags li label{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .9);
+    border: 2px solid rgba(139, 139, 139, .3);
+    color: #adadad;
+    border-radius: 25px;
+    white-space: nowrap;
+    margin: 3px 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li label {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+ul.ks-cboxtags li label::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+    padding: 2px 6px 2px 2px;
+    content: "\f067";
+    transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+    content: "\f00c";
+    transform: rotate(-360deg);
+    transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+    border: 2px solid #1bdbf8;
+    background-color: #ada692;
+    color: #fff;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+  display: absolute;
+}
+ul.ks-cboxtags li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+  border: 2px solid #e9a1ff;
+}
+ul.ks-cboxtags li input[type="radio"]:checked + label::before {
+    content: "\f00c";
+    transform: rotate(-360deg);
+    transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="radio"]:checked + label {
+    border: 2px solid #1bdbf8;
+    background-color: #ada692;
+    color: #fff;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li input[type="radio"] {
+  display: absolute;
+}
+ul.ks-cboxtags li input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+ul.ks-cboxtags li input[type="radio"]:focus + label {
+  border: 2px solid #e9a1ff;
+}
+/*search*/
+div.search {
+  margin-left: 55px;
+  height:30px;
+  width:350px;
+  border: 1px solid #ada692;
+  background:#ffffff;
+}
+
+input.search_text {
+  font-size: 16px;
+  width: 180px;
+  height: 100%;
+  padding:10px;
+  border: 0px;
+  outline:none;
+  float:left;
+}
+
+input.search_btn {
+  width: 70px;
+  height: 100%;
+  /*border-right:0px solid #ffffff;*/
+  border:0px;
+  background: #ada692;
+  outline: none;
+  float:right;
+  color: #ffffff;
+}
+
+/*table*/
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.responsive-table li {
+  border-radius: 3px;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.responsive-table .table-header {
+  background-color: #ada692;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.responsive-table .table-row {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+.responsive-table .col-0 {
+  flex-basis: 3%;
+}
+.responsive-table .col-1 { /*No*/
+  flex-basis: 3%;
+  text-align:center;
+}
+.responsive-table .col-1-roominfo { /*No*/
+  flex-basis: 3%;
+  text-align:center;
+}
+.responsive-table .col-1-requestlist { /*No*/
+  flex-basis: 3%;
+  text-align:center;
+}
+.responsive-table .col-2 { /*강의실*/
+  flex-basis: 15%;
+  text-align:center;
+}
+.responsive-table .col-2-roominfo { /*강의실*/
+  flex-basis: 15%;
+  text-align:center;
+}
+.responsive-table .col-2-requestlist { /*강의실*/
+  flex-basis: 12%;
+  text-align:center;
+}
+.responsive-table .col-3 { /*승인여부*/
+  flex-basis: 10%;
+  text-align:center;
+}
+.responsive-table .col-3-roominfo { /*승인여부*/
+  flex-basis: 10%;
+  text-align:center;
+}
+.responsive-table .col-3-requestlist { /*사용날짜*/
+  flex-basis: 12%;
+  text-align:center;
+}
+.responsive-table .col-4 { /*사용날짜*/
+  flex-basis: 27%;
+  text-align:center;
+}
+.responsive-table .col-4-requestlist { /*사용시간*/
+  flex-basis: 12%;
+  text-align:center;
+}
+.responsive-table .col-4-roominfo {
+  flex-basis: 10%;
+  text-align:center;
+}
+.responsive-table .col-5 { /*사용시간*/
+  flex-basis: 15%;
+  text-align:center;
+}
+.responsive-table .col-5-roominfo { /*사용시간*/
+  flex-basis: 15%;
+  text-align:center;
+}
+.responsive-table .col-5-requestlist { /*사용목적*/
+  flex-basis: 15%;
+  text-align:center;
+}
+.responsive-table .col-6 { /*사용목적*/
+  flex-basis: 15%;
+  text-align:center;
+}
+.responsive-table .col-6-roominfo { /*사용목적*/
+  flex-basis: 15%;
+  text-align:center;
+}
+.responsive-table .col-6-requestlist { /*메모*/
+  flex-basis: 4%;
+  text-align:center;
+}
+.responsive-table .col-7 { /*신청인*/
+  flex-basis: 10%;
+  text-align:center;
+}
+.responsive-table .col-7-requestlist { /*신청인*/
+  flex-basis: 9%;
+  text-align:center;
+}
+.responsive-table .col-7-description {
+  flex-basis: 20%;
+  text-align:center;
+}
+.responsive-table .col-8 { /*신청일*/
+  flex-basis: 17%;
+  text-align:center;
+}
+.responsive-table .col-8-requestlist { /*연락처*/
+  flex-basis: 6%;
+  text-align:center;
+}
+.responsive-table .col-9 { /*예약상태*/
+  flex-basis: 7%;
+  text-align:center;
+}
+.responsive-table .col-9-requestlist { /*학부*/
+  flex-basis: 4%;
+  text-align:center;
+}
+.responsive-table .col-10-requestlist { /*관련교수*/
+  flex-basis: 12%;
+  text-align:center;
+}
+.responsive-table .col-11-requestlist { /*신청일*/
+  flex-basis: 15%;
+  text-align:center;
+}
+.responsive-table .col-12-requestlist { /*승인여부*/
+  flex-basis: 8%;
+  text-align:center;
+}
+.responsive-table .col-13-requestlist { /*예약상태*/
+  flex-basis: 8%;
+  text-align:center;
+}
+@media all and (max-width: 767px) {
+  .responsive-table .table-header {
+    display: none;
+  }
+  .responsive-table li {
+    display: block;
+  }
+  .responsive-table .col {
+    flex-basis: 100%;
+  }
+  .responsive-table .col {
+    display: inline-table;
+    padding: 8px 8px;
+  }
+  .responsive-table .col-1 {
+    width: 35%;
+    text-align: left;
+  }
+  .responsive-table .col-1-roominfo {
+    width: 40%;
+    text-align: left;
+  }
+  .responsive-table .col-2 {
+    width: 60%;
+    text-align: right;
+  }
+  .responsive-table .col-2-roominfo {
+    width: 55%;
+    text-align: left;
+  }
+  .responsive-table .col-3 {
+    width: 45%;
+    text-align: left;
+  }
+  .responsive-table .col-3-roominfo {
+    width: 40%;
+    text-align: left;
+  }
+  .responsive-table .col-4 {
+    width: 95%;
+    text-align: left;
+  }
+  .responsive-table .col-4-roominfo {
+    width: 35%;
+    text-align: right;
+  }
+  .responsive-table .col-5 {
+    width: 65%;
+    text-align: left;
+  }
+  .responsive-table .col-5-roominfo {
+    width: 80%;
+    text-align: left;
+  }
+  .responsive-table .col-6 {
+    width: 70%;
+    text-align: left;
+  }
+  .responsive-table .col-6-roominfo {
+    width: 80%;
+    text-align: left;
+  }
+  .responsive-table .col-7 {
+    width: 39%;
+    text-align: left;
+  }
+  .responsive-table .col-7-roominfo {
+    width: 35%;
+    text-align: left;
+  }
+  .responsive-table .col-8 {
+    width: 52%;
+    text-align: left;
+  }
+  .responsive-table .col-8-roominfo {
+    width: 35%;
+    text-align: left;
+  }
+  .responsive-table .col-9 {
+    width: 50%;
+    text-align: left;
+  }
+  .responsive-table .col:before {
+    color: #6C7A89;
+    padding-right: 10px;
+    content: attr(data-label);
+    flex-basis: 50%;
+    text-align: right;
+  }
+}
+
+ul{
+  display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
